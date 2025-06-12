@@ -1,0 +1,80 @@
+{
+  "type": "adventure",
+  "id": "", // Ej. "ADV002"
+  "name": "", // Ej. "La Maldición del Torreón"
+  "tematica": "", // Ej. "horror", "combate", "exploracion", "intriga", "misterio", "homebrew", "otros"
+  "nivel_personajes": "", // Ej. "nivel_1_4", "nivel_5_10", "nivel_11_16", "nivel_17_20"
+  "origen": "", // Ej. "elfico", "enano", "humano", "infernal", "otro"
+  "dificultad": "", // Ej. "facil", "media", "alta", "mortal"
+  "duracion": "", // Ej. "corta" (1-2h), "estandar" (3-4h), "larga" (5+h)
+  "tipo_aventura": "", // Ej. "lineal", "sandbox", "mixta"
+  "description": "", // Breve resumen de la aventura
+  "background": "", // Contexto o trasfondo narrativo
+  "hooks": [
+    {
+      "title": "", // Ej. "El Mensaje Urgente"
+      "description": "" // Ej. "Un mensajero herido pide ayuda para salvar su aldea."
+    }
+  ],
+  "encuentros": [
+    {
+      "id": "", // Ej. "ENC001"
+      "name": "", // Ej. "Emboscada en el Camino"
+      "type": "", // Ej. "combate", "puzzle", "social", "exploracion"
+      "description": "", // Descripción del encuentro
+      "monstruos": [
+        {
+          "id": "", // ID del monstruo (ej. "MON001")
+          "name": "", // Nombre del monstruo
+          "quantity": 0 // Número de monstruos
+        }
+      ],
+      "recompensas": [
+        {
+          "id": "", // ID del ítem (ej. "ITEM001")
+          "name": "", // Nombre del ítem
+          "quantity": 0 // Cantidad
+        }
+      ]
+    }
+  ],
+  "localizaciones": [
+    {
+      "id": "", // Ej. "LOC001"
+      "name": "", // Ej. "Aldea de Piedraluna"
+      "description": "" // Descripción de la localización
+    }
+  ],
+  "pnjs": [
+    {
+      "id": "", // Ej. "PNJ001"
+      "name": "", // Ej. "Alcalde Torren"
+      "role": "", // Ej. "aliado", "antagonista", "neutral"
+      "description": "" // Descripción del PNJ
+    }
+  ],
+  "items": [
+    {
+      "id": "", // Ej. "ITEM001"
+      "name": "", // Ej. "Espada de Fuego"
+      "description": "" // Descripción del ítem
+    }
+  ],
+  "conjuros": [
+    {
+      "id": "", // Ej. "SPELL001"
+      "name": "", // Ej. "Bola de Fuego"
+      "description": "" // Descripción del conjuro
+    }
+  ],
+  "recompensas": {
+    "experiencia": 0, // Puntos de experiencia
+    "oro": 0, // Cantidad de oro
+    "items": [], // Lista de IDs de ítems (ej. ["ITEM001"])
+    "otros": "" // Ej. "Bendición divina", "Título nobiliario"
+  },
+  "conclusion": {
+    "success": "", // Ej. "Los aventureros salvan la aldea."
+    "failure": "" // Ej. "La aldea es destruida por el culto."
+  }
+}

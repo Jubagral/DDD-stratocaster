@@ -1,0 +1,218 @@
+{
+  "dictionary": {
+    "items": [
+      {
+        "id": "ITEM001",
+        "name": "Espada de Sombraluz",
+        "type": "arma",
+        "path": "items/armas/espadas/raro/elfico/ITEM001.json",
+        "description": "Una espada élfica que brilla bajo la luna, +1 al ataque.",
+        "rareza": "raro",
+        "origen": "elfico"
+      },
+      {
+        "id": "ITEM002",
+        "name": "Poción de Curación Mayor",
+        "type": "poción",
+        "path": "items/pociones/curativas/comun/humano/ITEM002.json",
+        "description": "Restaura 4d4+4 puntos de vida.",
+        "rareza": "comun",
+        "origen": "humano"
+      },
+      {
+        "id": "ITEM003",
+        "name": "Anillo de Protección",
+        "type": "anillo",
+        "path": "items/anillos/poco_comun/humano/ITEM003.json",
+        "description": "+1 a la CA.",
+        "rareza": "poco_comun",
+        "origen": "humano"
+      }
+    ],
+    "monstruos": [
+      {
+        "id": "MON001",
+        "name": "Dracolisco Esmeralda Corrupto",
+        "type": "dragon",
+        "path": "monstruos/dragon/raro/elfico/MON001.json",
+        "cr": 10,
+        "description": "Un dragón corrompido por magia oscura.",
+        "origen": "elfico"
+      },
+      {
+        "id": "MON002",
+        "name": "Cultista Fanático",
+        "type": "humanoide",
+        "path": "monstruos/humanoide/comun/humano/MON002.json",
+        "cr": 2,
+        "description": "Un humano obsesionado con un culto oscuro.",
+        "origen": "humano"
+      },
+      {
+        "id": "MON003",
+        "name": "Espectro",
+        "type": "no_muerto",
+        "path": "monstruos/no_muerto/poco_comun/humano/MON003.json",
+        "cr": 1,
+        "description": "Un espíritu vengativo que ronda ruinas.",
+        "origen": "humano"
+      }
+    ],
+    "conjuros": [
+      {
+        "id": "SPELL001",
+        "name": "Muro de Luz Élfico",
+        "type": "abjuracion",
+        "path": "conjuros/abjuracion/nivel_3/elfico/SPELL001.json",
+        "nivel": 3,
+        "clase": ["mago", "druida"],
+        "description": "Un muro brillante que protege contra ataques oscuros."
+      },
+      {
+        "id": "SPELL002",
+        "name": "Daga de Sombras",
+        "type": "evocacion",
+        "path": "conjuros/evocacion/nivel_2/humano/SPELL002.json",
+        "nivel": 2,
+        "clase": ["brujo", "hechicero"],
+        "description": "Invoca una daga mágica que inflige 2d6 de daño necrótico."
+      }
+    ],
+    "pnjs": [
+      {
+        "id": "PNJ001",
+        "name": "Eldrin Lunaclara",
+        "role": "aliado",
+        "description": "Clérigo élfico que conoce los secretos del culto.",
+        "origen": "elfico"
+      },
+      {
+        "id": "PNJ002",
+        "name": "Mara la Susurrante",
+        "role": "antagonista",
+        "description": "Líder del culto, una hechicera humana.",
+        "origen": "humano"
+      }
+    ],
+    "localizaciones": [
+      {
+        "id": "LOC001",
+        "name": "Aldea de Piedraluna",
+        "description": "Una aldea humana al borde de un bosque oscuro, bajo una maldición.",
+        "origen": "humano"
+      },
+      {
+        "id": "LOC002",
+        "name": "Templo Profanado",
+        "description": "Ruinas de un templo antiguo, ahora nido de cultistas.",
+        "origen": "humano"
+      }
+    ]
+  "adventure": {
+    "type": "adventure",
+    "id": "ADV002",
+    "name": "Sombras en Piedraluna",
+    "tematica": "intriga",
+    "nivel_personajes": "nivel_1_4",
+    "origen": "humano",
+    "dificultad": "facil",
+    "duracion": "corta",
+    "tipo_aventura": "lineal",
+    "description": "Los aventureros investigan desapariciones en la Aldea de Piedraluna, donde un culto oscuro realiza rituales en un templo profanado.",
+    "background": "Un culto liderado por Mara la Susurrante ha infiltrado la aldea, secuestrando aldeanos para un ritual necrótico.",
+    "hooks": [
+      {
+        "title": "El Grito en la Noche",
+        "description": "Un aldeano suplica ayuda tras ver a su hermano ser secuestrado por encapuchados."
+      },
+      {
+        "title": "El Encargo del Alcalde",
+        "description": "El alcalde ofrece una recompensa por descubrir la causa de las desapariciones."
+      }
+    ],
+    "encuentros": [
+      {
+        "id": "ENC001",
+        "name": "Acechadores en la Niebla",
+        "type": "combate",
+        "description": "Dos cultistas y un espectro emboscan a los aventureros en el bosque.",
+        "monstruos": [
+          {
+            "id": "MON002",
+            "name": "Cultista Fanático",
+            "quantity": 2
+          },
+          {
+            "id": "MON003",
+            "name": "Espectro",
+            "quantity": 1
+          }
+        ],
+        "recompensas": [
+          {
+            "id": "ITEM002",
+            "name": "Poción de Curación Mayor",
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": "ENC002",
+        "name": "Interrogatorio en la Aldea",
+        "type": "social",
+        "description": "Los aventureros deben persuadir o intimidar a un aldeano sospechoso para obtener pistas.",
+        "pnjs": [
+          {
+            "id": "PNJ002",
+            "name": "Mara la Susurrante",
+            "role": "antagonista"
+          }
+        ]
+      }
+    ],
+    "localizaciones": [
+      {
+        "id": "LOC001",
+        "name": "Aldea de Piedraluna",
+        "description": "Una aldea humana al borde de un bosque oscuro."
+      },
+      {
+        "id": "LOC002",
+        "name": "Templo Profanado",
+        "description": "Ruinas de un templo antiguo, ahora nido de cultistas."
+      }
+    ],
+    "pnjs": [
+      {
+        "id": "PNJ002",
+        "name": "Mara la Susurrante",
+        "role": "antagonista",
+        "description": "Líder del culto, una hechicera humana."
+      }
+    ],
+    "items": [
+      {
+        "id": "ITEM003",
+        "name": "Anillo de Protección",
+        "description": "Encontrado en el templo, otorga +1 a la CA."
+      }
+    ],
+    "conjuros": [
+      {
+        "id": "SPELL002",
+        "name": "Daga de Sombras",
+        "description": "Usado por Mara durante el combate final."
+      }
+    ],
+    "recompensas": {
+      "experiencia": 1200,
+      "oro": 200,
+      "items": ["ITEM003"],
+      "otros": "Agradecimiento de la aldea: alojamiento gratuito por un mes."
+    },
+    "conclusion": {
+      "success": "Los aventureros derrotan a Mara y liberan a los aldeanos.",
+      "failure": "El culto completa el ritual, sumiendo la aldea en la oscuridad."
+    }
+  }
+}
